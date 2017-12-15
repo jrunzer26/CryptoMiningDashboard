@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-	"test": "mocha --recursive"
+    "test": "mocha --recursive",
+    "install": "cd semantic && gulp build"
   },
   "dependencies": {
     "body-parser": "~1.18.2",
@@ -15,9 +16,11 @@
     "pug": "2.0.0-beta11",
     "request": "^2.83.0",
     "request-promise": "^4.2.2",
+    "semantic-ui": "^2.2.13",
     "serve-favicon": "~2.4.5"
   },
   "devDependencies": {
+    "gulp": "^3.9.1",
     "mocha": "^4.0.1",
     "supertest": "^3.0.0"
   }
