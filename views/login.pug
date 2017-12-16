@@ -1,0 +1,30 @@
+extends layout
+
+block headerContent
+	script(src="/javascripts/login.js")
+block content
+	#header.ui.menu.fixed.inverted
+		a.item(onclick="home()") WatchDoge
+		.right.menu
+			a.item(onclick="login()") Login
+
+	#contentContainer.ui.container.center.aligned
+		h2 WatchDoge Login
+		h2 Wallet Login
+		select.ui.dropdown
+			option(value="") BTC
+			option(value="1") ETH
+
+		form.ui.form
+			.field
+				label Wallet Address
+				input(name="wallet-address", placeholder="Wallet Address", type="text")
+			.field
+				label MiningPoolHub API Key
+				input(name="miningpoolhub-api", placeholder="API Key", type="text")
+		.ui.button(onclick="attemptLogin()") Login
+
+				
+		
+
+			

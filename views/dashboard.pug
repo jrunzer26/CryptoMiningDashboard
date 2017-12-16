@@ -1,0 +1,18 @@
+extends layout
+
+block headerContent
+	script(src="/javascripts/dashboard.js")
+block content
+	#header.ui.menu.fixed.inverted
+		a.item(onclick="dashboard()") Dashboard
+		a.item(onclick="mining()") Mining
+		a.item(onclick="portfolio()") Portfolio
+		.right.menu
+			a.item(onclick="login()") Logout
+	#contentContainer.ui.container.center.aligned
+		#dashboard
+			h2 Dashboard
+		#mining
+			h2 Mining
+		#portfolio
+			h2 Portfolio

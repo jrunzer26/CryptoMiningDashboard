@@ -1,6 +1,24 @@
 extends layout
 
+block headerContent
+	script(src='/javascripts/index.js')
 block content
-	h1= title
-	p Welcome to #{title}
-	button.ui.button Semantic UI
+	#header.ui.menu.fixed.inverted
+		a.item(onclick="aboutPage()") About
+		a.item(onclick="previewPage()") Preview
+		a.item(onclick="downloadPage()") Download
+		.right.menu
+			a.item(onclick="login()") Login
+	#contentContainer.ui.container.center.aligned
+		#about
+			h1 WatchDoge
+			img.ui.medium.centered.rounded.image(src="/images/watchdoge.png")
+			h3 Track Mining & Crypto Currency Portfolios
+			p Signup or use wallet addresses/API keys to start monitoring
+		#preview
+			h1 Preview
+		#download
+			h2 Download
+			h3 Python Mining Monitor
+			a https://github.com
+
