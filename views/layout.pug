@@ -1,10 +1,17 @@
 doctype html
 html
 	head
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		block headerContent
 		title= title
 		link(rel='stylesheet', type='text/css', href='/dist/semantic.min.css')
 		link(rel='stylesheet', href='/stylesheets/style.css')
 		script(src='https://code.jquery.com/jquery-3.1.1.min.js', integrity='sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=', crossorigin='anonymous')
 		script(src='/dist/semantic.min.js')
+		script(src='/javascripts/layout.js')
 	body
 		block content
+		
+		footer.ui.menu.inverted.center.aligned
+			a.item Twitter
+			a.item Email
