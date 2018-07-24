@@ -12,7 +12,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/status-update', function(req, res, next) {
   console.log(req.body.data);
-  save(req.body.data, '..\\rig-status\\'+req.body.name, (err, data) => {
+  save(req.body.data, '../rig-status/'+req.body.name, (err, data) => {
       console.log(data);
       console.log(err);
       if (err) throw err;
@@ -23,7 +23,7 @@ router.post('/status-update', function(req, res, next) {
 
 router.get('/status', function(req, res, next) {
   var dataRead = [];
-  readfiles(__dirname+'\\..\\rig-status\\', {
+  readfiles(__dirname+'/../rig-status/', {
     depth: 0
   }, function (err, filename, content) {
     if (err) throw err;
