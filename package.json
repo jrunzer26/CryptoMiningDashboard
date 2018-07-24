@@ -8,14 +8,19 @@
     "install": "cd semantic && gulp build"
   },
   "dependencies": {
+    "bluebird": "^3.5.1",
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
     "express": "~4.15.5",
+    "gulp-clone": "1.0.0",
     "morgan": "~1.9.0",
+    "node-readfiles": "^0.2.0",
     "pug": "2.0.0-beta11",
+    "read-directory": "^3.0.0",
     "request": "^2.83.0",
     "request-promise": "^4.2.2",
+    "save-file": "^1.2.0",
     "semantic-ui": "^2.2.13",
     "serve-favicon": "~2.4.5"
   },
