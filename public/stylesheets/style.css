@@ -7,7 +7,7 @@ a {
   color: #00B7FF;
 }
 
-#download, #preview, #portfolio, #mining {
+#download, #preview, #portfolio, #mining, #dashboard {
 	display: none;
 }
 

@@ -1,4 +1,8 @@
-window.onload = function() {
+$(document).ready(onload());
+
+
+function onload() {
+	status();
 }
 
 function dashboard() {
@@ -33,6 +37,7 @@ function status() {
 		contentType: "application/json; charset=utf-8",
 		success: function(data) {
 			console.log(data);
+			$("#health").html("");
 			data.data.forEach(function(item){
 					var lines = item.split("\n"),
 					output = [],
